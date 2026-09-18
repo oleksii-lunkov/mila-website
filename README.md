@@ -59,5 +59,5 @@ One-time, from this folder, with the GitHub CLI signed in (`gh auth login`):
 ./deploy.sh
 ```
 
-The script creates the public repo `mila-potapova`, pushes `main`, enables Pages from the root of
+The script creates the public repo `mila-website`, pushes `main`, enables Pages from the root of
 `main` and prints the public URL. Later updates: commit and `git push`.

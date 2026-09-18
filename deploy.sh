@@ -3,7 +3,7 @@
 # Requires: git, gh (signed in: `gh auth login`).
 set -euo pipefail
 
-REPO_NAME="${REPO_NAME:-mila-potapova}"
+REPO_NAME="${REPO_NAME:-mila-website}"
 cd "$(dirname "$0")"
 
 if ! gh auth status >/dev/null 2>&1; then
