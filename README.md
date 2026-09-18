@@ -1,7 +1,7 @@
 # Mila Potapova — personal brand website
 
 Static one-page portfolio site. No build step: plain HTML, CSS and a small JS file.
-Hosted on GitHub Pages from the `main` branch, root folder.
+Hosted on GitHub Pages from the `gh-pages` branch, which mirrors `main` (see Deploy below).
 
 ## Structure
 
@@ -53,11 +53,14 @@ Then open http://localhost:8765/.
 
 ## Deploy to GitHub Pages
 
-One-time, from this folder, with the GitHub CLI signed in (`gh auth login`):
+Live site: https://oleksii-lunkov.github.io/mila-website/
+
+GitHub Pages serves the `gh-pages` branch of `oleksii-lunkov/mila-website`. The workflow in
+`.github/workflows/pages.yml` mirrors `main` into `gh-pages` on every push, so publishing is:
 
 ```bash
-./deploy.sh
+git push origin main
 ```
 
-The script creates the public repo `mila-website`, pushes `main`, enables Pages from the root of
-`main` and prints the public URL. Later updates: commit and `git push`.
+The site updates about a minute later. `deploy.sh` is only needed to recreate the setup in a new
+repo (it requires a signed-in GitHub CLI).
